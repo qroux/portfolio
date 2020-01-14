@@ -1,13 +1,13 @@
 <template>
   <b-col xs="6" sm="6" md="4" xl="4">
     <div class="full-stack mb-5">
-      <div class="stack-line">
+      <div
+        @click="testsvg"
+        v-b-toggle="`collapse-${index + 1}`"
+        class="stack-line"
+      >
         <h4>{{ stack.a.title }}</h4>
-        <div
-          @click="testsvg"
-          v-b-toggle="`collapse-${index + 1}`"
-          class="custom-btn"
-        >
+        <div class="custom-btn">
           <font-awesome-icon
             :icon="['fas', `times`]"
             :class="{ rotate: toggled }"
@@ -56,9 +56,6 @@ $strong: #637675;
     align-items: center;
     width: 50px;
     height: 50px;
-    &:hover {
-      cursor: pointer;
-    }
   }
   svg {
     color: white;
@@ -73,6 +70,9 @@ $strong: #637675;
     justify-content: space-between;
     align-items: center;
     color: white;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .list-size {
     padding: 8px 30px;

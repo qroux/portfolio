@@ -14,16 +14,21 @@
               sm="10"
               md="5"
               xl="3"
-              class="d-flex justify-content-center align-items-center"
+              class="p-0 mt-4 d-flex align-items-start"
             >
               <div
+                id="pf-bg"
                 :style="{
                   backgroundImage: `url(${project.photo})`
                 }"
                 class="card"
               >
                 <div class="card-content">
-                  <a :href="project.link" target="_blank">
+                  <a
+                    :href="project.link"
+                    target="_blank"
+                    class="stretched-link"
+                  >
                     <h3>{{ project.name }}</h3>
                   </a>
                   <img :src="`img/${project.logo}`" alt="" />
@@ -58,6 +63,13 @@ export default {
           link: 'https://www.notice-droit.fr'
         },
         {
+          name: 'Open Data',
+          lang: 'Ruby',
+          photo: 'img/trust.png',
+          logo: 'ruby-logo.png',
+          link: 'https://trustpair-test.herokuapp.com'
+        },
+        {
           name: 'Smartcontracts',
           lang: 'Javascript + BlockChain',
           photo: 'img/kickstarter.png',
@@ -65,18 +77,18 @@ export default {
           link: 'https://kickstarter-copy.herokuapp.com'
         },
         {
-          name: 'Vue Stocks',
+          name: 'Cabinet Dentaire',
+          lang: 'Nuxt.js',
+          photo: 'img/nuxt-cabinet.png',
+          logo: 'nuxt-logo.png',
+          link: 'http://dr-roux-gilbert.chirurgiens-dentistes.fr'
+        },
+        {
+          name: 'Vue + Firebase',
           lang: 'Vue.js',
           photo: 'img/stocks.png',
           logo: 'vue-logo.png',
           link: 'https://stocks-portfolio-vue.herokuapp.com'
-        },
-        {
-          name: 'Open Data',
-          lang: 'Ruby',
-          photo: 'img/trust.png',
-          logo: 'ruby-logo.png',
-          link: 'https://trustpair-test.herokuapp.com'
         }
       ]
     }
@@ -100,13 +112,16 @@ export default {
 .test-row {
   justify-content: center;
 }
+#pf-bg {
+  background-size: cover;
+}
 .card {
   display: flex;
   justify-content: center;
   color: white;
   height: 200px;
   width: 250px;
-  margin: 15px 0;
+  margin: auto;
   background-size: cover;
 }
 .card-content {
@@ -115,13 +130,15 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-  height: 101%;
+  height: 80%;
   width: 101%;
   transition: 0.5s;
 }
 .card-content:hover {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.9);
+  color: #474747;
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   background-size: cover;
 }
 .card-content a {
@@ -130,7 +147,7 @@ export default {
   text-decoration: none;
 }
 .card-content:hover a {
-  color: rgba(0, 0, 0, 1);
+  color: #474747;
 }
 .card-content img {
   opacity: 0;
