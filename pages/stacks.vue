@@ -30,7 +30,7 @@
         </b-row>
         <b-row>
           <div class="container">
-            <Intrests :path="'/portfolio'" />
+            <Arrow :path="'/portfolio'" />
           </div>
         </b-row>
       </div>
@@ -40,13 +40,13 @@
 
 <script>
 // import Stack from '../components/Stack.vue'
-import Intrests from '../components/Intrests.vue'
+import Arrow from '../components/Arrow.vue'
 import StackList from '../components/stacks/StackList.vue'
 export default {
   components: {
     // Stack,
     StackList,
-    Intrests
+    Arrow
   },
   data() {
     return {

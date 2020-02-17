@@ -43,24 +43,9 @@ export default {
 $default-b: #474747;
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('~assets/banner-13.jpeg');
-  // background-image: linear-gradient(
-  //   to right bottom,
-  //   #4f839b,
-  //   #598da5,
-  //   #6396af,
-  //   #6da0b9,
-  //   #77aac3,
-  //   #80b4cb,
-  //   #8abed4,
-  //   #94c8dc,
-  //   #a0d4e5,
-  //   #ace0ed,
-  //   #baecf6,
-  //   #c7f8ff
-  // );
   background-size: cover;
   background-attachment: fixed;
   color: $default-b;
@@ -68,8 +53,6 @@ body {
 .page-container {
   height: 100vh;
   width: 100vw;
-}
-.full-page {
 }
 .test {
   padding: 0 7vw;

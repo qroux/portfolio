@@ -47,6 +47,7 @@ export default {
 
 <style scoped lang="scss">
 $default-b: #474747;
+// $strong: #326273;
 $strong: #637675;
 .full-stack {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

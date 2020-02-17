@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  props: ['path']
+  props: {
+    path: {
+      default: '/',
+      type: String
+    }
+  }
 }
 </script>
 
@@ -28,24 +33,6 @@ export default {
   .title {
     margin-bottom: 35px;
     border-bottom: 1px solid;
-  }
-}
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  img {
-    height: 50px;
-    width: 50px;
-  }
-  svg {
-    font-size: 40px;
-  }
-}
-.item {
-  text-align: center;
-  h5 {
-    margin-top: 15px;
   }
 }
 </style>

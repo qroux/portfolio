@@ -14,7 +14,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway&display=swap' }]
+    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap' }]
   },
   /*
    ** Customize the progress-bar color

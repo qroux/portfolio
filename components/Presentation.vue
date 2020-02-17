@@ -9,7 +9,7 @@
               <div class="pres-text">
                 <h2>Quentin Roux - Juriste/Codeur</h2>
                 <hr />
-                <h5 class="">
+                <h5>
                   <strong>Pourquoi</strong>
                 </h5>
                 <h5>
@@ -19,7 +19,7 @@
                 </h5>
                 <br />
                 <hr />
-                <h5 class="">
+                <h5>
                   <strong>Comment</strong>
                 </h5>
                 <h5>
@@ -29,7 +29,7 @@
                 </h5>
                 <br />
                 <hr />
-                <h5 class="">
+                <h5>
                   <strong>Maintenant</strong>
                 </h5>
                 <h5>
@@ -41,7 +41,7 @@
             </div>
           </b-col>
           <div class="container">
-            <Intrests :path="'/stacks'" />
+            <Arrow :path="'/stacks'" />
           </div>
         </b-row>
       </div>
@@ -50,10 +50,10 @@
 </template>
 
 <script>
-import Intrests from '../components/Intrests.vue'
+import Arrow from '../components/Arrow.vue'
 export default {
   components: {
-    Intrests
+    Arrow
   }
 }
 </script>
