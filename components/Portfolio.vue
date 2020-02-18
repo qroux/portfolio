@@ -6,12 +6,12 @@
           <h2 class="mb-4">Portfolio</h2>
         </div>
         <div class="grid-container">
-          <b-tabs content-class="">
-            <b-tab title="Javascript" active>
-              <Projects :projects="reactProjects" />
-            </b-tab>
+          <b-tabs id="c-tab" fill>
             <b-tab title="Ruby">
               <Projects :projects="rubyProjects" />
+            </b-tab>
+            <b-tab title="Javascript">
+              <Projects :projects="reactProjects" />
             </b-tab>
           </b-tabs>
         </div>
@@ -43,27 +43,34 @@ export default {
           link: 'https://www.notice-droit.fr'
         },
         {
-          name: 'Open Data',
+          name: 'Paris Open Data',
           lang: 'Ruby',
           photo: 'img/trust.png',
           logo: 'ruby-logo.png',
           link: 'https://trustpair-test.herokuapp.com'
+        },
+        {
+          name: 'Ruby + Sinatra',
+          lang: 'Ruby',
+          photo: 'img/skello.png',
+          logo: 'sinatra-logo.png',
+          link: 'https://skello-sinatra.herokuapp.com'
         }
       ],
       reactProjects: [
-        {
-          name: 'SmartContracts',
-          lang: 'Javascript + BlockChain',
-          photo: 'img/kickstarter.png',
-          logo: 'eth-logo.png',
-          link: 'https://kickstarter-copy.herokuapp.com'
-        },
         {
           name: 'React + Redux',
           lang: 'React',
           photo: 'img/cursed-twitch.png',
           logo: 'react-redux.png',
           link: 'https://react-stream-client.herokuapp.com'
+        },
+        {
+          name: 'SmartContracts',
+          lang: 'Javascript + BlockChain',
+          photo: 'img/kickstarter.png',
+          logo: 'eth-logo.png',
+          link: 'https://kickstarter-copy.herokuapp.com'
         },
         {
           name: 'Vue + Firebase',
@@ -73,7 +80,7 @@ export default {
           link: 'https://stocks-portfolio-vue.herokuapp.com'
         },
         {
-          name: 'Cabinet Dentaire',
+          name: 'Vue + Nuxt',
           lang: 'Vue + Nuxt',
           photo: 'img/nuxt-cabinet.png',
           logo: 'nuxt-logo.png',
@@ -102,5 +109,9 @@ export default {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-auto-flow: column;
+}
+#c-tab,
+.active {
+  font-weight: bold;
 }
 </style>

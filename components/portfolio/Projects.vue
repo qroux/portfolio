@@ -1,6 +1,5 @@
 <template>
   <div class="mt-4">
-    <Test />
     <b-container fluid class="justify-content-center">
       <b-row class="text-center">
         <b-col

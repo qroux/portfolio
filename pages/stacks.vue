@@ -53,15 +53,15 @@ export default {
       stacks: [
         {
           a: {
-            type: 'Backend',
-            lang: 'Ruby',
-            logo: 'ruby-logo.png',
+            type: 'FullStack',
+            lang: 'Rails 6',
+            logo: 'rails.png',
             title: 'Ruby'
           },
           b: {
-            type: 'Frontend',
-            lang: 'ES6 + Webpack',
-            logo: 'es6-logo.png'
+            type: 'FullStack',
+            lang: 'Sinatra',
+            logo: 'sinatra-logo.png'
           },
           c: {
             type: 'Database',
@@ -77,19 +77,26 @@ export default {
         {
           a: {
             type: 'Backend',
+            lang: 'es6',
+            logo: 'es6-logo.png',
+            title: 'Javascript'
+          },
+          b: {
+            type: 'Backend',
             lang: 'Node + Express',
             logo: 'node-logo.svg',
             title: 'Javascript'
           },
-          b: {
+          c: {
+            type: 'Frontend',
+            lang: 'React + Redux',
+            logo: 'react-redux.png',
+            title: 'Javascript'
+          },
+          d: {
             type: 'Frontend',
             lang: 'Vue + Nuxt',
             logo: 'vue-logo.png'
-          },
-          c: {
-            type: 'Database',
-            lang: 'MongoDB',
-            logo: 'mongo-logo.png'
           }
           // d: {
           //   type: 'Testing',

@@ -17,18 +17,6 @@
       </div>
     </div>
   </div>
-  <!--   <div
-    @click="flip(card)"
-    :style="{ backgroundImage: `url(${project.photo})` }"
-    class="project-content"
-  >
-    <div class="details">
-      <img :src="`img/${project.logo}`" alt="" />
-      <a :href="project.link" target="_blank" class="">
-        <h3>{{ project.name }}</h3>
-      </a>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -40,14 +28,6 @@ export default {
     },
     project: {
       type: Object
-    }
-  },
-  methods: {
-    flip() {
-      this.flipped = !this.flipped
-    },
-    test() {
-      console.log(`alert! from ${this.project.name}`)
     }
   }
 }
@@ -100,7 +80,8 @@ $strong: #637675;
     margin-right: 20px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 25px;
+    word-break: break-all;
   }
   a {
     color: white;

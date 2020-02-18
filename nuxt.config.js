@@ -60,7 +60,13 @@ export default {
              }
            ]
           }
-    ]
+    ],
+    [
+          '@nuxtjs/google-analytics',
+          {
+            id: 'UA-158718667-1' || ''
+          }
+        ]
   ],
   /*
    ** Build configuration
